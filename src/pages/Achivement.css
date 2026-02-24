@@ -1,0 +1,75 @@
+#achivement{
+    min-height: 100vh;
+    padding: 80px 100px;
+}
+
+#achivement h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#achivement h3{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+}
+
+.achievement-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-card{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.achievement-card:hover{
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+}
+
+.achievement-card h4{
+    font-size: 22px;
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.achievement-card .year{
+    color: #7b2ff7;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.achievement-card p{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #achivement{
+        padding: 50px 20px;
+    }
+    #achivement h1{
+        font-size: 36px;
+    }
+    #achivement h3{
+        font-size: 20px;
+    }
+    .achievement-grid{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,77 @@
+#education{
+    min-height: 100vh;
+    padding: 80px 100px;
+}
+
+#education h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #00d4ff, #7b2ff7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#education h3{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+}
+
+.education-card{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: 0.3s;
+    max-height: 1000px;
+}
+
+.education-card:hover{
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+}
+
+.education-card h4{
+    font-size: 24px;
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.education-card .year{
+    color: #7b2ff7;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.education-card p{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.education-card .cgpa{
+    color: #00d4ff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    #education{
+        padding: 50px 20px;
+    }
+    #education h1{
+        font-size: 36px;
+    }
+    #education h3{
+        font-size: 20px;
+    }
+    .education-card{
+        padding: 25px;
+    }
+}
